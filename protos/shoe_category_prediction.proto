@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+
+service CategoryPrediction {
+    // Obtains a category prediction for a shoe image, encoded as bytes
+    rpc GetImagePrediction (ImagePredictionRequest) returns (PredictionReply) {}
+    rpc GetTextPrediction (TextPredictionRequest) returns (PredictionReply) {}
+}
+
+
+message ImagePredictionRequest {
+    bytes image = 1;
+}
+
+message TextPredictionRequest {
+    string text = 1;
+}
+
+message PredictionReply {
+    string prediction = 1;
+}
+
+

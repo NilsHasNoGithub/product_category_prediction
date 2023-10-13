@@ -1,0 +1,48 @@
+[tool.poetry]
+name = "product-prediction"
+version = "0.1.0"
+description = ""
+authors = ["Nils Golembiewski <nilsgolembiewski@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+beautifulsoup4 = "*"
+numpy = "*"
+torch = "*"
+torchvision = "*"
+pytorch-lightning = "*"
+matplotlib = "*"
+polars = "*"
+plotly = "*"
+mlflow = "*"
+timm = "*"
+click = "*"
+requests = "*"
+joblib = "*"
+attrs = "*"
+selenium = "*"
+loguru = "*"
+tqdm = "*"
+pyarrow = "*"
+regex = "*"
+orjson = "*"
+pillow = "*"
+scikit-learn = "*"
+albumentations = "*"
+seaborn = "*"
+xlsxwriter = "*"
+sentence-transformers = "*"
+grpcio = "*"
+embedding-inspector = {git = "https://github.com/NilsHasNoGithub/embedding_inspector"}
+
+[tool.poetry.group.dev.dependencies]
+jupyterlab = "*"
+black = {version="*", extras = ["jupyter"]}
+isort = "*"
+icecream = "*"
+grpcio-tools = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
