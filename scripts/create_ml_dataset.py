@@ -80,7 +80,7 @@ def process_sample(dataset_out_dir: Path, index: int, data_row: Dict[str, Any]) 
     "-i",
     required=True,
     type=click.Path(exists=True, path_type=Path),
-    help="Path to extracted product data (parquet file, output of `extract_plutosport_products.py)",
+    help="Path to extracted product data (parquet file, output of `extract_intersport_products.py)",
 )
 @click.option(
     "--out-dir",
